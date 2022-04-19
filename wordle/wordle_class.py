@@ -52,6 +52,7 @@ class Wordle:
 
         else:
             self._lives -= 1
+            self._attempts.append(guess)
 
             for i in range(len(guess)):
                 try:
